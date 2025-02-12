@@ -1,0 +1,11 @@
+langchain-community
+supabase
+python-dotenv
+langchain-openai
+beautifulsoup4
+lxml
+streamlit
+langchain_huggingface
+composio_openai
+pygithub
+langgraph
