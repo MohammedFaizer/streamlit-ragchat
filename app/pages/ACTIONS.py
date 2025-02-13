@@ -8,9 +8,19 @@ if "rows" not in st.session_state:
     st.session_state.rows = []
 
 st.title("RAG ACTIONS")
+st.text("Rules:")
+st.caption("1.Never give the Action name twice.")
+st.caption("2.Action name-(use '_' for spacing)")
+st.caption("3.Add variables which need to be called by your api")
+st.caption("4.use double curly brackets wherever you want the variables to be used")
+st.caption("5.If you add a variable  (var_name)'character_name' | (var_type) 'string'| (var_desc) 'you should fetch character name ")
+st.caption("  Ex: url=https://api.disneyapi.dev/character ")
+st.caption("6. query params key:name   value:{{character_name}}")
+st.caption("7.naming should be clear,so ai can figure when to use")
+st.markdown('---')
 
 chatbot_id = st.text_input("Enter the chatbot id")
-action_name = st.text_input("Enter the action Name")
+action_name = st.text_input("Enter the action Name ")
 action_desc = st.text_area("When To Use")
 
 def add_row():
