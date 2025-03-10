@@ -1,5 +1,5 @@
 import streamlit as st
 
 
-st.title("CYCES Chatbase RAG 🚀")
+st.title("Primus Chatbase RAG 🚀")
    
