@@ -44,7 +44,7 @@ components.html(
       </body>
     </html>
     """,
-    height=550,
+    height=600,
     scrolling=True,
     
 )
