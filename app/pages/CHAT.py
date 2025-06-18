@@ -18,8 +18,15 @@ new_thread_url = "http://172.105.48.116:8000/api/chatbase/new-thread/"
 
 
 if 'thread_id' in st.session_state and st.session_state.thread_id:
-    st.subheader(f"Chat with {st.session_state.chatbot_name}")
-
+    # st.subheader(f"Chat with {st.session_state.chatbot_name}")
+    st.markdown(
+    """
+    <div style="display: flex; align-items: center; justify-content: center; margin-bottom: 20px;">
+        <img src="https://roa-admin-staging.vercel.app/assets/logo.svg" width="200">
+    </div>
+    """,
+    unsafe_allow_html=True,
+)
     # Get user input
     user_question = st.chat_input("Please enter your question")
 
